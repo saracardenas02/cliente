@@ -1,0 +1,63 @@
+.slider{
+    height: calc(100vh - 80px);
+    width: 100vw;
+    position: relative;
+    overflow: hidden;
+
+    .container{
+        width: 300vw;
+        height: 100%;
+        display: flex;
+        transition: all 1s ease;
+
+        img{
+            width: 100vw;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .icons{
+        width: fit-content;
+        display: flex;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 100px;
+        gap: 10px;
+        margin: auto;
+
+        .icon{
+            width: 50px;
+            height: 50px;
+            border: 1px solid #999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    /* Cambiar el estilo cuando el ancho de la pantalla sea igual o menor a 768px */
+    .slider .container {
+        width: 100%; /* Hacer que las imágenes ocupen el 100% del ancho de la pantalla */
+        flex-direction: row; /* Mantener la dirección de flex en fila */
+    }
+
+    .slider .container img {
+        width: 100%; /* Hacer que las imágenes ocupen el 100% del ancho de la pantalla */
+        height: auto; /* Mantener la proporción de aspecto de las imágenes */
+    }
+
+    .slider .icons {
+        bottom: 10px; /* Ajusta la posición vertical de los íconos */
+        gap: 5px; /* Reduce el espacio entre los íconos */
+    }
+
+    .slider .icons .icon {
+        width: 30px; /* Ajusta el tamaño de los íconos */
+        height: 30px; /* Ajusta el tamaño de los íconos */
+    }
+}

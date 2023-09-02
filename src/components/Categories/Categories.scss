@@ -1,0 +1,58 @@
+.categories{
+
+    margin: 100px;
+
+   .top{
+    h1 {
+        font-family: 'Arial', sans-serif; /* Elige una fuente que se adapte al estilo que buscas */
+        font-size: 50px; /* Tamaño grande para un logo impactante */
+        font-weight: bold; /* Fuente en negrita para mayor énfasis */
+        color: #ff9900; /* Color llamativo, puedes ajustarlo según tus preferencias */
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra de texto para destacar */
+      
+        }
+   }
+   
+
+    .bottom{
+        display: flex;
+        height: 70hv;
+        flex-wrap: wrap;
+        gap: 10px;
+        align-items: center;
+        .col{
+            flex: 1;
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            justify-content: center; /* Centra verticalmente */
+            align-items: center;
+            position: relative;
+        
+            img{
+               width: 100%;
+               height: 100%;
+               object-fit: cover; 
+            }
+           }
+    }
+
+    @media (max-width: 768px) {
+    /* Cambiar el estilo cuando el ancho de la pantalla sea igual o menor a 768px */
+    .categories {
+        margin: 30px 10px; /* Ajusta los márgenes para dispositivos muy pequeños */
+    }
+
+    .categories .top {
+        h1 {
+            font-size: 24px; /* Reduce aún más el tamaño de fuente para dispositivos muy pequeños */
+        }
+    }
+
+    .categories .bottom .col {
+        max-width: 100%; /* Asegura que las columnas ocupen el ancho completo en dispositivos pequeños */
+    }
+}
+   
+}
+

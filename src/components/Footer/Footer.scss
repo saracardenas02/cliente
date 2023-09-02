@@ -1,0 +1,50 @@
+/* Footer.module.scss */
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .item {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .item h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .left {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .copyright {
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  
+  .right img {
+    max-width: 100px;
+  }
+  

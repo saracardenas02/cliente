@@ -1,0 +1,27 @@
+.planes{
+
+    margin-top: 200px;
+    .titulo{
+        h1 {
+            display: block;
+            width: 300px; /* Ancho más amplio */
+            padding: 20px 30px; /* Mayor relleno */
+            text-align: center;
+            background-color: #3498db;
+            color: #ffffff;
+            border-radius: 15px; /* Bordes redondeados más amplios */
+            text-decoration: none;
+            font-size: 36px; /* Tamaño de fuente más grande */
+            font-weight: bold;
+            margin: 0 auto;
+           }
+       }
+
+       .list{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+       }
+        
+       
+}
